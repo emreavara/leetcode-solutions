@@ -1,4 +1,4 @@
-class Solution {
+class RomanToInteger {
     public int romanToInt(String s) {
         int sum = 0, currentNum = 0, prevNumber = Integer.MAX_VALUE;
         char currentChar = 'I';

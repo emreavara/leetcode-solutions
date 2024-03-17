@@ -1,6 +1,6 @@
 // Without long  (used only int)
 
-class Solution {
+class ReverseInteger {
     public int reverse(int x) {
         int reversedNumber = 0;
         boolean sign = false;
@@ -25,27 +25,27 @@ class Solution {
 
 // !!! Using long which is not allowed
 
-class Solution {
-    public int reverse(int x) {
-        long reversedNumber = 0;
-        boolean sign = false;
-        if(x < 0){
-            sign = true;
-        }
-//        x = Math.abs(x);
-        while(x>0){
-            reversedNumber = reversedNumber*10 + x%10;
-            x = x / 10;
-        }
-        if(reversedNumber > Integer.MAX_VALUE || reversedNumber < Integer.MIN_VALUE){
-            return 0;
-        }
-        if(sign == true){
-            return (int) (-1* reversedNumber);
-        }
-        return (int) reversedNumber;
-    }
-}
+//class Solution {
+//    public int reverse(int x) {
+//        long reversedNumber = 0;
+//        boolean sign = false;
+//        if(x < 0){
+//            sign = true;
+//        }
+////        x = Math.abs(x);
+//        while(x>0){
+//            reversedNumber = reversedNumber*10 + x%10;
+//            x = x / 10;
+//        }
+//        if(reversedNumber > Integer.MAX_VALUE || reversedNumber < Integer.MIN_VALUE){
+//            return 0;
+//        }
+//        if(sign == true){
+//            return (int) (-1* reversedNumber);
+//        }
+//        return (int) reversedNumber;
+//    }
+//}
 
 
 
