@@ -23,7 +23,7 @@ public class ValidPalindrome {
         left++;
       } else if (!Character.isLetterOrDigit(rightChar)){
         right--;
-      } else if(leftChar == rightChar || isEqual(leftChar, rightChar)){
+      } else if(isEqual(leftChar, rightChar) || leftChar == rightChar ){
         left++;
         right--;
       } else {
